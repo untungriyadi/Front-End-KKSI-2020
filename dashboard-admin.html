@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link href="asset/fontawesome/css/all.css" rel="stylesheet" >
+    <title>Admin</title>
+    <style type="text/css">
+
+      .two {
+        color: white;
+      }
+
+      .top-books {
+      }
+
+      .top-books .books {
+        padding: 20px 50px 20px 50px;
+        border-radius: 10px;
+        background-color: lightblue;
+      }
+
+      .top-students .students {
+        padding: 20px 50px 20px 50px;
+        border-radius: 10px;
+        background-color: salmon;
+      }
+
+      .nav-item button {
+        text-transform: uppercase;
+      }
+      .nav-link{
+        text-transform: uppercase;
+      }
+
+      .two {
+        cursor: pointer;
+      }
+
+      .two:hover {
+
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">BACA BUKU</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="students.html">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="teachers.html">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="officer.html">Officer</a>
+          </li>
+          <li class="nav-item">
+            <img id="add" class="img-thumbnail rounded-circle " style="width: 50px;" src="asset/image/profile.jpg" data-toggle="modal" data-target="#exampleModal">
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">YOUR ACCOUNT</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="user text-center">
+                  <img class="img-thumbnail rounded-circle " style="width: 200px;" src="asset/image/profile.jpg">
+                  <h3>ADMIN</h3>
+                  <p>adminstm@smkn1-cirebon.sch.id</p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="setting text-center">
+                  <hr>
+                  <a href=""><i class="fas fa-key"></i> Change Password</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-danger mx-auto">LOGOUT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="one mt-3">
+      <div class="container">
+        <h3>Hi, Wellcome back admin!</h3>
+      </div>
+    </section>
+
+    <section class="two mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="shadow-sm p-3 mb-5 bg-primary rounded text-center">
+              <i class="fas fa-book d-block mt-3 mb-3" style="font-size: 40px;"></i>
+              <span>1423</span>
+              <p>BOOKS</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shadow-sm p-3 mb-5 bg-success rounded text-center">
+              <i class="fas fa-users d-block mt-3 mb-3" style="font-size: 40px;"></i>
+              <span>1423</span>
+              <p>STUDENTS</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shadow-sm p-3 mb-5 bg-warning rounded text-center">
+              <i class="fas fa-chalkboard-teacher d-block mt-3 mb-3" style="font-size: 40px;"></i>
+              <span>1423</span>
+              <p>TEACHERS</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="shadow-sm p-3 mb-5 bg-dark rounded text-center">
+              <i class="fas fa-id-card-alt d-block mt-3 mb-3" style="font-size: 40px;"></i>
+              <span>1423</span>
+              <p>OFFICERS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-books">
+      <div class="container">
+        <div class="row">
+          <div class="col books">
+            <div class="text">
+              <h2>TOP 10 BOOKS</h2>
+            </div>  
+        
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                  </td>
+                </tr>                
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <section class="top-students mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col students">
+            <div class="text">
+              <h2>TOP 10 STUDENTS</h2>
+            </div>  
+        
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-eye"></i></button>
+                  </td>
+                </tr>                
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
